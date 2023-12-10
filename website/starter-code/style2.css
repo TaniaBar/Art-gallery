@@ -1,0 +1,328 @@
+:root {
+    --big:'Big Shoulders Display', sans-serif;
+    --out:'Outfit', sans-serif;
+    --pink-color:rgb(213, 150, 108);
+    --black: rgb(21, 21, 21);
+    --grey: rgb(68, 68, 68);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(assets/desktop/image-map@2x.png);
+    background-size: contain;
+}
+
+.position {
+    position: absolute;
+    left: 8vw;
+    border-style: hidden;
+    font-family: var(--out);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 12vw;
+    height: 5.3vh;
+    background: linear-gradient(90deg, var(--pink-color) 0%, var(--pink-color) 22%, var(--black) 22%, var(--black) 100%);
+}
+
+.position:hover {
+    background: linear-gradient(90deg, var(--black) 0%, var(--black) 22%, var(--pink-color) 22%, var(--pink-color) 100%);
+    cursor: pointer;
+}
+
+.position a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--big);
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    padding-top: 1.3vh;
+    padding-right: 1.5vw;
+    text-align: center;
+}
+
+.position img {
+    margin-top: 1.4vh;
+    padding-left: 1vw;
+    height: 2.5vh;
+}
+
+.body {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.h-body {
+    width: 40%;
+    color: white;
+    font-family: var(--big);
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    padding-top: 12vh;
+    padding-left: 10vw;
+}
+
+.loc {
+    width: 50%;
+    color: white;
+}
+
+.loc h3 {
+    font-family: var(--big);
+    color: var(--pink-color);
+    text-transform: uppercase;
+    font-size: 2vw;
+    padding-top: 12vh;
+}
+
+.loc span {
+    font-family: var(--out);
+    line-height: 1.5;
+}
+
+.loc p {
+    margin-top: 3vh;
+    font-family: var(--out);
+    width: 52%;
+    line-height: 1.5;
+}
+
+.footer {
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--pink-color);
+}
+
+.h-footer {
+    width: 16vw;
+    color: black;
+    font-family: var(--big);
+    text-transform: uppercase;
+    padding-top: 4vh;
+    padding-left: 13vw;
+    font-size: 1.6vw;
+}
+
+.p-footer {
+    width: 24vw;
+    color: black;
+    font-family: var(--out);
+    padding-top: 4vh;
+}
+
+.social {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.fb, .insta, .twitter {
+    color: #000000;
+    padding-top: 4.5vh;
+}
+
+.fb:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.insta:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.twitter:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.fb {
+    padding-left: 10vw;
+}
+
+.insta, .twitter {
+    padding-left: 2vw;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .map {
+        height: 60vh;
+        background-image: url(assets/desktop/image-map@2x.png);
+        background-position-x: 46%;
+        background-size: cover;
+    }
+
+    .position {
+        left: 8vw;
+        width: 22vw;
+        height: 5.3vh;
+    }
+    
+    .position a {
+        font-size: 2.1vw;
+        font-weight: 400;
+        letter-spacing: 0.3vw;
+        padding-top: 1.3vh;
+        padding-right: 1.8vw;
+    }
+    
+    .position img {
+        padding-left: 1.7vw;
+    }
+
+    .body {
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    .h-body {
+        width: 40%;
+        font-size: 3.2vw;
+        line-height: 0.9;
+        padding-top: 8vh;
+        padding-left: 8vw;
+    }
+
+    .loc h3 {
+        font-size: 2.8vw;
+        padding-top: 8vh;
+    }
+    
+    .loc span {
+        font-family: var(--out);
+        line-height: 1.5;
+        font-size: 1.9vw;
+    }
+    
+    .loc p {
+        font-size: 0.9em;
+        width: 85%;
+        line-height: 1.5;
+    }
+
+    .footer {
+        height: 24vh;
+    }
+
+    .h-footer {
+        width: 16vw;
+        padding-top: 4vh;
+        padding-left: 7vw;
+        font-size: 2.2vw;
+        line-height: 0.9;
+    }
+    
+    .p-footer {
+        width: 32vw;
+        font-size: 0.8em;
+        line-height: 1.5;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .map {
+        width: 100%;
+        background-image: url(assets/desktop/image-map@2x.png);
+        background-position-x: 50%;
+        background-size: cover;
+    }
+
+    .position {
+        left: 0vw;
+        width: 45vw;
+        height: 7vh;
+    }
+    
+    .position a {
+        font-size: 3.8vw;
+        font-weight: 400;
+        letter-spacing: 0.6vw;
+        padding-top: 2.2vh;
+        padding-right: 7vw;
+    }
+    
+    .position img {
+        padding-left: 3.5vw;
+        margin-top: 1.8vh;
+        height: 3.5vh;
+    }
+
+    .body {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h-body br{
+        display: none;
+    }
+
+    .h-body {
+        width: 80%;
+        font-size: 24px;
+        padding-top: 4vh;
+    }
+
+    .loc {
+        width: 80%;
+        padding-left: 48px;
+    }
+
+    .loc h3 {
+        font-size: 20px;
+        padding-top: 4vh;
+    }
+    
+    .loc span {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    
+    .loc p {
+        font-size: 14px;
+        width: 80%;
+        line-height: 1.5;
+    }
+
+    .footer {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h-footer {
+        width: 80%;
+        padding-top: 4vh;
+        padding-left: 10vw;
+        font-size: 16px;
+        line-height: 0.9;
+    }
+    
+    .p-footer {
+        width: 80%;
+        font-size: 14px;
+        line-height: 1.5;
+        padding-left: 10vw;
+        padding-top: 0;
+    }
+
+    .fb, .insta, .twitter {
+        padding-top: 4vh;
+        padding-bottom: 4.5vh;
+    }
+}
